@@ -1,24 +1,24 @@
 <h2>Scenario</h2>
-<p>You are a security professional at a large organization. Part of your job is to investigate security issues to help keep the system secure. You recently discovered some potential security issues that involve login attempts and employee machines.</p>
+<p>As a security professional at a large organization, your role includes investigating security issues to ensure system safety. Recently, you've identified potential security concerns related to login attempts and employee machines.</p>
 
-<p>Your task is to examine the organization’s data in their <b>employees</b> and <b>log_in_attempts</b> tables. You’ll need to use SQL filters to retrieve records from different datasets and investigate the potential security issues.</p>
+<p>Your assignment involves analyzing the organization's data within the employees and log_in_attempts tables. You’ll need to apply SQL filters to extract records from different datasets and explore potential security concerns.</p>
 
 <h3>Solution</h3>
-<b>Step 1 (Retrieving after-hours failed login attempts):</b><br>
+<b>Step 1: <br>Extracting failed login attempts outside of regular hours.</b><br>
    The organization database contains the following tables: <u list-style-type="none"><li>log_in_attempts</i> <li>employees</i></u>
    <p>
    <pre>The <b>'log_in_attempts'</b> table has the following columns</pre>
     <ul>
-    <li><b>event_id:</b> The identification number assigned to each login event.</li>
-    <li><b>username:</b> The username of the employee.</li>
-    <li><b>login_date:</b> The date the login attempt was recorded.</li>
-    <li><b>login_time:</b> The time the login attempt was recorded.</li>
+    <li><b>event_id:</b> The unique identification number assigned to each login event.</li>
+    <li><b>username:</b> The employee's username.</li>
+    <li><b>login_date:</b> The date the login attempt was logged.</li>
+    <li><b>login_time:</b> The time the login attempt was logged.</li>
     <li><b>country:</b> The country where the login attempt occurred.</li>
     <li><b>ip_address:</b> The IP address of that employee’s machine.</li>
     <li><b>success:</b> The success of the login attempt; FALSE (0) indicates a failed attempt.</li>
     </ul>
 
-The time of the login attempt is found in the <b>login_time</b> column. The <b><i>success</i></b> column contains a value of 0 when a login attempt failed and 1 when it is successful.
+The login attempt time is recorded in the login_time column, while the success column indicates a failure with a value of 0 and a success with a value of 1.
 </p>
 <p>
    <pre>The <b>'employees'</b> table has the following columns</pre>
