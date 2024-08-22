@@ -36,7 +36,8 @@ The login attempt time is recorded in the login_time column, while the success c
   <li>WHERE</li>
   <li>AND</li>
 </ul><p>
-<img width="960" alt="image" src="https://github.com/devhalimah/Google-Cybersecurity-Professional-Certificate-Projects/assets/64546668/38fb488f-321e-4edc-948b-6579bc03666f">
+<img width="960" alt="bukolasehinde" src="https://github.com/user-attachments/assets/54c2d683-9f63-43c3-b4ee-702cb6906573">
+
 </p>
 </p>
 
@@ -49,7 +50,7 @@ The login attempt time is recorded in the login_time column, while the success c
   <li>WHERE</li>
   <li>OR</li>
 </ul><p>
-<img width="960" alt="image" src="https://github.com/devhalimah/Google-Cybersecurity-Professional-Certificate-Projects/assets/64546668/c7083ea7-a423-4a99-be0d-225672fb80a0">
+<img width="960" alt="bukolasehinde" src="https://github.com/user-attachments/assets/473e7f6d-409d-4c0a-a216-4a8a9019ffdb">
 </p>
 </p>
 
@@ -64,7 +65,8 @@ I will apply the following SQL filters to create a query that identifies all log
   <li>LIKE</li>
   <li>A wildcard(%) to make sure the query reflects the country values 'MEX' and 'MEXICO'.</li>
 </ul><p>
-<img width="960" alt="image" src="https://github.com/devhalimah/Google-Cybersecurity-Professional-Certificate-Projects/assets/64546668/9f2d6a32-c0e2-471f-bced-48dcf343b4a6">
+<img width="960" alt="bukolasehinde" src="https://github.com/user-attachments/assets/b209ea88-d5ab-41c4-9d5e-66e177c79c4e">
+
 </p>
 </p>
 
@@ -80,7 +82,8 @@ I will apply the following SQL filters to craft a query that identifies all empl
   <li>LIKE</li>
    <li>LIKE and % (To filter for the East building.)</li>
 </ul>
-<img width="483" alt="image" src="https://github.com/devhalimah/Google-Cybersecurity-Professional-Certificate-Projects/assets/64546668/4c030173-314c-48d4-b600-54b3ea026ada">
+<img width="483" alt="bukolasehinde" src="https://github.com/user-attachments/assets/31260b8a-cb64-4c31-898d-8e3656a27d93">
+
 </p>
 </p>
 
@@ -95,7 +98,8 @@ I will apply the following SQL filters to create a query that identifies all emp
   <li>WHERE</li>
   <li>OR</li>
 </ul><p>
-<img width="960" alt="image" src="https://github.com/devhalimah/Google-Cybersecurity-Professional-Certificate-Projects/assets/64546668/eb21e90c-913b-4def-b303-bfe6d636a5ae">
+<img width="960" alt="bukolasehinde" src="https://github.com/user-attachments/assets/0147484b-7e64-4098-ae3e-e24e4dd639c1">
+
 </p>
 </p>
 
@@ -109,7 +113,7 @@ I will apply the following SQL filters to generate a query that identifies all e
   <li>WHERE</li>
   <li>NOT</li>
 </ul><p>
-<img width="960" alt="image" src="https://github.com/devhalimah/Google-Cybersecurity-Professional-Certificate-Projects/assets/64546668/fd0a4bb6-fec7-49a0-9a8e-be5624d26695">
+<img width="960" alt="bukolasehinde" src="https://github.com/user-attachments/assets/abb6508b-be5b-463e-9590-7c8f12260cb3">
 </p>
 </p>
 
