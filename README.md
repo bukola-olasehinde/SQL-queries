@@ -23,15 +23,15 @@ The login attempt time is recorded in the login_time column, while the success c
 <p>
    <pre>The <b>'employees'</b> table has the following columns</pre>
     <ul>
-      <li><b>employee_id:</b> The identification number assigned to each employee.</li>
-      <li><b>device_id:</b> The identification number assigned to each device used by the employee.</li>
-      <li><b>username:</b> The username of the employee.</li>
-      <li><b>department:</b> The department the employee is in.</li>
+      <li><b>employee_id:</b> The unique identification number assigned to each employee.</li>
+      <li><b>device_id:</b> The unique ID assigned to each device used by the employee.</li>
+      <li><b>username:</b> The employee's username.</li>
+      <li><b>department:</b> The employee's department.</li>
       <li><b>office:</b> The office the employee is located in.</li>
     </ul>
 </p>
 <p>
- We'll assume that like most large organizations, this organizations's closing time is 18:00. So I'll use the following SQL filters to create a query that identifies all failed login attempts that occurred after 18:00:
+ Assuming that, like most large organizations, this one closes at 18:00, I will use the following SQL filters to craft a query that identifies all failed login attempts occurring after 18:00:
 <ul>
   <li>WHERE</li>
   <li>AND</li>
@@ -41,11 +41,10 @@ The login attempt time is recorded in the login_time column, while the success c
 </p>
 
 -------------------------------------------------------------------------------------------------------------------------
-<b>Step 2 (Retrieving login attempts on specific dates):</b>
+<b>Step 2: <br>Extracting login attempts from specific dates</b>
 <h4>Sub-Scenario</h4> 
-<p>A suspicious event occurred on 2022-05-09. To investigate this event, we'll have to review all login attempts which occurred on this day and the day before.<br>
-The date of the login attempt is found in the <b>login_date column</b>.<br>
-So I'll use the following SQL filters to create a query that identifies all login attempts that occurred on 2022-05-09 or 2022-05-08:
+<p>A suspicious event took place on 2022-05-09. To investigate, we need to review all login attempts from that day and the previous day.<br> The login attempt date is recorded in the <b>login_date column</b>. I'll apply the following SQL filters to create a query that captures all login attempts from 2022-05-09 or 2022-05-08:
+   
 <ul>
   <li>WHERE</li>
   <li>OR</li>
@@ -55,10 +54,10 @@ So I'll use the following SQL filters to create a query that identifies all logi
 </p>
 
 ----------------------------------------------------------------------------------------------------------------------------
-<b>Step 3 (Retrieving login attempts outside of Mexico):</b>
+<b>Step 3: <br>Extracting login attempts outside of Mexico</b>
 <h4>Sub-Scenario</h4> 
-<p>There have been suspicious activity with login attempts, but the team has determined that this activity didn't originate in Mexico. Now, we need to investigate login attempts that occurred outside of Mexico (i.e. checking country values of both MEX and MEXICO).<br>
-I will use the following SQL filters to create a query that identifies all login attempts that occurred outside of Mexico:
+<p>Suspicious login activity has been detected, but the team has determined that it did not originate from Mexico. We now need to examine login attempts from locations outside Mexico (i.e., excluding country values of both MEX and MEXICO). 
+I will apply the following SQL filters to create a query that identifies all login attempts occurring outside of Mexico:
 <ul>
   <li>WHERE</li>
   <li>NOT</li>
@@ -70,27 +69,28 @@ I will use the following SQL filters to create a query that identifies all login
 </p>
 
 ----------------------------------------------------------------------------------------------------------------------------
-<b>Step 4 (Retrieving employee details in Marketing):</b>
+<b>Step 4: <br>Extracting employee details in Marketing</b>
 <h4>Sub-Scenario</h4> 
 <p>
-The security team wants to perform security updates on specific employee machines in the Marketing department. You're responsible for getting information on these employee machines and will need to query the employees table. The department of the employee is found in the <b>department</b> column, which contains values that include Marketing. The office is found in the <b>office</b> column. Some examples of values in this column are East-170, East-320, and North-434.<br>
-I'll use the following SQL filters to create a query that identifies all employees in the Marketing department for all offices in the East building:
+The security team needs to perform updates on specific employee machines in the Marketing department. You are tasked with gathering information about these machines by querying the employees table. The employee's department is listed in the <b>department</b> column, which includes values like Marketing, while the office location is specified in the <b>office</b> column with examples such as East-170, East-320, and North-434.
+I will apply the following SQL filters to craft a query that identifies all employees in the Marketing department who are based in any of the East building offices:
 <ul>
   <li>WHERE</li>
   <li>AND</li>
   <li>LIKE</li>
+   <li>LIKE and % (To filter for the East building.)</li>
 </ul>
-I’ll also use the LIKE keyword with % to filter for the East building.<p>
 <img width="483" alt="image" src="https://github.com/devhalimah/Google-Cybersecurity-Professional-Certificate-Projects/assets/64546668/4c030173-314c-48d4-b600-54b3ea026ada">
 </p>
 </p>
 
 ----------------------------------------------------------------------------------------------------------------------------
-<b>Step 5 (Retrieving employee details in Finance or Sales):</b>
+<b>Step 5: <br>Extracting employee details in Finance or Sales</b>
 <h4>Sub-Scenario</h4> 
 <p>
-The security team now needs to perform a different security update on machines for employees in the Sales and Finance departments. The department of the employees is found in the <b>department</b> column, which contains values that include Sales and Finance.<br>
-I'll use the following SQL filters to create a query that identifies all employees in the Sales or Finance departments:
+The security team now requires a separate security update for machines used by employees in the Sales and Finance departments. The department information is found in the <b>department</b> column, which includes Sales and Finance.
+   
+I will apply the following SQL filters to create a query that identifies all employees in either the Sales or Finance departments:
 <ul>
   <li>WHERE</li>
   <li>OR</li>
@@ -100,11 +100,11 @@ I'll use the following SQL filters to create a query that identifies all employe
 </p>
 
 ----------------------------------------------------------------------------------------------------------------------------
-<b>Step 6 (Retrieving all employee data not in IT):</b>
+<b>Step 6: <br>Extracting all employee data not in IT</b>
 <h4>Sub-Scenario</h4> 
-<p>
-The security team needs to make one more update to employee machines. The employees who are in the Information Technology department already had this update, but employees in all other departments need it. The department of the employee is found in the <b>department</b> column, which contains values that include Information Technology.<br>
-I'll use the following SQL filters to create a query which identifies all employees not in the IT department:
+<p>The security team needs to perform one final update on employee machines. While employees in the Information Technology department have already received this update, it is still required for employees in all other departments. The employee's department is listed in the <b>department</b> column, which includes Information Technology.
+
+I will apply the following SQL filters to generate a query that identifies all employees who are not in the IT department:
 <ul>
   <li>WHERE</li>
   <li>NOT</li>
@@ -116,5 +116,5 @@ I'll use the following SQL filters to create a query which identifies all employ
 -----------------------------------------------------------------------------------------------------------------------------
 <b>Summary:</b>
 <p>
- As a security professional, I have successfully retrieved after-hours failed login attempts, retrieved login attempts on specific dates and those outside Mexico, in addition to retrieving employees data in various departments.<br>This examination of organization’s data using SQL filters has allowed me to retrieve records from different datasets and investigate potential security issues.
+As a security professional, I have effectively retrieved after-hours failed login attempts, login attempts on specific dates, and those from outside Mexico, as well as employee data from various departments. By examining the organization’s data with SQL filters, I have successfully extracted records from different datasets and investigated potential security issues.
 </p>
