@@ -36,7 +36,8 @@ The login attempt time is recorded in the login_time column, while the success c
   <li>WHERE</li>
   <li>AND</li>
 </ul><p>
-<img width="960" alt="bukolasehinde" src="https://github.com/user-attachments/assets/54c2d683-9f63-43c3-b4ee-702cb6906573">
+<img width="854" alt="bukolasehinde-SQL1" src="https://github.com/user-attachments/assets/452fd7ef-e8c3-4d45-b1f6-d90454f814c0">
+
 
 </p>
 </p>
@@ -50,7 +51,7 @@ The login attempt time is recorded in the login_time column, while the success c
   <li>WHERE</li>
   <li>OR</li>
 </ul><p>
-<img width="960" alt="bukolasehinde" src="https://github.com/user-attachments/assets/473e7f6d-409d-4c0a-a216-4a8a9019ffdb">
+<img width="856" alt="bukolasehinde-SQL2" src="https://github.com/user-attachments/assets/4bdab022-be7f-49e0-987e-5c1a171e0672">
 </p>
 </p>
 
@@ -65,7 +66,8 @@ I will apply the following SQL filters to create a query that identifies all log
   <li>LIKE</li>
   <li>A wildcard(%) to make sure the query reflects the country values 'MEX' and 'MEXICO'.</li>
 </ul><p>
-<img width="960" alt="bukolasehinde" src="https://github.com/user-attachments/assets/b209ea88-d5ab-41c4-9d5e-66e177c79c4e">
+<img width="866" alt="bukolasehinde-SQL3" src="https://github.com/user-attachments/assets/af5c03f9-9af5-478e-94bd-60a6a60f820b">
+
 
 </p>
 </p>
@@ -82,7 +84,7 @@ I will apply the following SQL filters to craft a query that identifies all empl
   <li>LIKE</li>
    <li>LIKE and % (To filter for the East building.)</li>
 </ul>
-<img width="483" alt="bukolasehinde" src="https://github.com/user-attachments/assets/31260b8a-cb64-4c31-898d-8e3656a27d93">
+<img width="453" alt="bukolasehinde-SQL4" src="https://github.com/user-attachments/assets/8819f176-2e40-4bd3-8dbe-b913364762aa">
 
 </p>
 </p>
@@ -98,7 +100,7 @@ I will apply the following SQL filters to create a query that identifies all emp
   <li>WHERE</li>
   <li>OR</li>
 </ul><p>
-<img width="960" alt="bukolasehinde" src="https://github.com/user-attachments/assets/0147484b-7e64-4098-ae3e-e24e4dd639c1">
+<img width="720" alt="bukolasehinde-SQL5" src="https://github.com/user-attachments/assets/f629ec5e-ef7a-4f57-9a44-c8fe365b3e0b">
 
 </p>
 </p>
@@ -113,7 +115,8 @@ I will apply the following SQL filters to generate a query that identifies all e
   <li>WHERE</li>
   <li>NOT</li>
 </ul><p>
-<img width="960" alt="bukolasehinde" src="https://github.com/user-attachments/assets/abb6508b-be5b-463e-9590-7c8f12260cb3">
+<img width="780" alt="bukolasehinde-SQL6" src="https://github.com/user-attachments/assets/b3d9f875-b350-4890-8fc1-deb05c10ddc9">
+
 </p>
 </p>
 
